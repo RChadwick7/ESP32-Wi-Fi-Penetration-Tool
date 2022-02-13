@@ -72,27 +72,6 @@ This project consists of multiple components, that can be reused in other projec
 - [**PCAP Serializer**](components/pcap_serializer) component serializes captured frames into PCAP binary format and provides it to other components (mostly for webserver/UI)
 - [**HCCAPX Serializer**](components/hccapx_serializer) component serializes captured frames into HCCAPX binary format and provides it to other components (mostly for webserver/UI)
 
-## Hardware 
-This project was mostly build and tested on **ESP32-DEVKITC-32E**
-but there should not be any differences for any **ESP32-WROOM-32** modules.
-
-<p align="center">
-    <img src="doc/images/soucastky_8b.png" alt="Hw components" width="400">
-</p>
-
-On the following pictures you can see a battery (Li-Pol accumulator) powered ESP32 DevKitC using following hardware:
-- **ESP32-DEVKITC-32E** (cost 213 CZK/8.2 EUR/9.6 USD)
-- 220mAh Li-Pol 3.7V accumulator (weights ±5g, cost 77 CZK/3 EUR/3.5 USD)
-- MCP1702-3302ET step-down 3.3V voltage regulator (cost 11 CZK/0.42 EUR/0.50 USD)
-- Czech 5-koruna coin for scale (weights 4.8g, diameter 23 mm, cost 0.19 EUR/0.23 USD)
-<p align="center">
-    <img src="doc/images/mini.jpg" alt="Hw components" width="300">
-    <img src="doc/images/mini2.jpg" alt="Hw components" width="300">
-</p>
-
-Altogether (without coin) this setup weights around 17g. This can be further downsized by using smaller Li-Pol accumulator and using ESP32-WROOM-32 modul directly instead of whole dev board.
-
-This setup cost me around 300 CZK (± 11.50 EUR/13.50 USD). Using the modul directly that costs around 80 CZK (± 3 EUR/3.5 USD) we can get to price of 160 CZK (± 6.5 EUR/7.5 USD) which makes this tool really cheap and available to almost everybody.
 
 ### Power consumption
 Based on experimental measurements, ESP32 consumes around 100mA during attack executions. 
